@@ -20,4 +20,5 @@ from course import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('learndj/', views.learn_django)
+    #path('learn_django', views.learn_django) when urls name is same as the view function
 ]

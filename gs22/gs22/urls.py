@@ -18,7 +18,8 @@ from django.urls import path,include
 from core import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home),
+    path('', views.index),
+    path('home', views.home),
     path('about/', views.about),
     path('nkm/', include('course.urls')),
     

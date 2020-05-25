@@ -1,0 +1,3 @@
+Creating_Project:-  django-admin startproject gs1
+Creating_Application:- python manage.py startapp course
+Runserver- python manage.py runserver

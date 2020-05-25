@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,13 +15,14 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
+    
     <title>OSMS</title>
 </head>
 <body>
     <!-- Start Navigation -->
     <nav class="navbar navbar-expand-sm navbar-dark 
     bg-success pl-5 fixed-top">
-    <a class="navbar-brand" href="index.php">OSMS</a>
+    <a class="navbar-brand" href="#">OSMS</a>
     <span class="navbar-text">Customer's Happiness is our 
         Aims</span>
     <button class="navbar-toggler" type="button" 
@@ -44,10 +46,18 @@
   </div>
     </nav>   
     <!-- End Navigation -->
-    <header class="jumbotron back-image" 
-    style="background-image:url(images/banner.jpg);">
+    <style>
+        .image{
+            width: 100%;
+            height: 570px;
+            background:url({% static 'images/banner.jpg' %});
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+    <header class="jumbotron" >
 
-    <div class="mainHeading">
+    <div class="mainHeading image">
     <h1 class="text-uppercase text-danger font-weight-bold ">Welcome to OSMS</h1>
     <p class="font-italic">Customer's Happiness is our Aim</p>
     <a href="#" class="btn btn-success mr-4">Login</a>

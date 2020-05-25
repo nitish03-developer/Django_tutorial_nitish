@@ -20,11 +20,11 @@ from fees import views as fs
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', vs.learn_django, name='home'),
-    path('cor/', include([
+   # path('cor/', include([
         path('learndj/', vs.learn_django),
         path('learnpy/', vs.learn_python),
-    ])),
-    path('fe/', include([
+   # ])),
+    #path('fe/', include([
         path('feesdj/', fs.fees_django),
-    ])),
+    #])),
 ]

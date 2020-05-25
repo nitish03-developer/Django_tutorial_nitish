@@ -6,3 +6,6 @@ def home(request):
 
 def about(request):
     return render(request, 'core/about.htm')
+def index(request):
+    return render(request, 'core/index.htm')
+
